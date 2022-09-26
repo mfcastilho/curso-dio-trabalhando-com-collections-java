@@ -41,13 +41,13 @@ public class Principal {
             System.out.println(linguagem);
         }
 
-//        //Ordem por nome, ano de criacao e IDE
-//        System.out.println("\n--\tOrdem por nome, ano de criacao e IDE\t--");
-//        Set<LinguagemFavorita> listalinguagemFavoritas4 = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIde());
-//        listalinguagemFavoritas4.addAll(listaLinguagensFavoritas);
-//        for (LinguagemFavorita linguagem: listalinguagemFavoritas4){
-//            System.out.println(linguagem);
-//        }
+        //Ordem por nome, ano de criacao e IDE
+        System.out.println("\n--\tOrdem por nome, ano de criacao e IDE\t--");
+        Set<LinguagemFavorita> listalinguagemFavoritas4 = new TreeSet<>(new ComparatorNomeAnoDeCriacaoIde());
+        listalinguagemFavoritas4.addAll(listaLinguagensFavoritas);
+        for (LinguagemFavorita linguagem: listalinguagemFavoritas4){
+            System.out.println(linguagem);
+        }
 
     }
 
@@ -86,21 +86,21 @@ public class Principal {
         }
     }
 
-//    static  class ComparatorNomeAnoDeCriacaoIde implements Comparator<LinguagemFavorita>{
-//
-//        @Override
-//        public int compare(LinguagemFavorita l1, LinguagemFavorita l2) {
-//            int nome = l1.getNome().compareToIgnoreCase(l2.getNome());
-//            int ano = Integer.compare(l1.getAnoDeCriacao(), l2.getAnoDeCriacao());
-//            int ide = l1.getIde().compareToIgnoreCase(l2.getIde());
-//
-//            if(nome != 0){
-//                return nome;
-//            }
-//            if(ano != 0){
-//                return ano;
-//            }
-//            return ide;
-//        }
-//    }
+    static  class ComparatorNomeAnoDeCriacaoIde implements Comparator<LinguagemFavorita>{
+
+        @Override
+        public int compare(LinguagemFavorita l1, LinguagemFavorita l2) {
+            int nome = l1.getNome().compareToIgnoreCase(l2.getNome());
+            int ano = Integer.compare(l1.getAnoDeCriacao(), l2.getAnoDeCriacao());
+            int ide = l1.getIde().compareToIgnoreCase(l2.getIde());
+
+            if(nome != 0){
+                return nome;
+            }
+            if(ano != 0){
+                return ano;
+            }
+            return ide;
+        }
+    }
 }
