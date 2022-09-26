@@ -55,7 +55,13 @@ public class Ex1 {
         }
 //      arcoiris.removeIf(cor -> !cor.startsWith("V"));//Versao simplificada
 
-        
+        //Limpe o Conjunto
+        System.out.println("\n--Limpando o conjunto--");
+        arcoiris.clear();
+        System.out.println("\n--Conferindo se o conjunto está vazio--");
+        System.out.println(arcoiris);
+
+
 
 
 
