@@ -41,6 +41,23 @@ public class Ex1 {
             }
         }
 
+       //Remova todas as cores que NÃO começam com a letra 'v'
+        Iterator<String> iterator = arcoiris.iterator();
+        System.out.println("Removendo todas as cores que NÃO começam com a letra 'v'");
+        while (iterator.hasNext()){
+            if (!iterator.next().startsWith("V")){
+                iterator.remove();
+            }
+        }
+        System.out.println();
+        for(String cor: arcoiris){
+            System.out.println(cor);
+        }
+//      arcoiris.removeIf(cor -> !cor.startsWith("V"));//Versao simplificada
+
+        
+
+
 
 
 
