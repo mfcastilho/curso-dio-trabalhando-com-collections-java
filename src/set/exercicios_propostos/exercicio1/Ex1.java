@@ -1,4 +1,4 @@
-package set.exercicios_propostos;
+package set.exercicios_propostos.exercicio1;
 
 import java.util.*;
 
