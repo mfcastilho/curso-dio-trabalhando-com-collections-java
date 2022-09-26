@@ -1,9 +1,6 @@
 package set.exercicios_propostos;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Ex1 {
     public static void main(String[] args) {
@@ -18,10 +15,25 @@ public class Ex1 {
 
         //Exiba a quantidade de cores que o arco-íris tem
         System.out.println("Total de "+arcoiris.size()+" cores");
+        Set<String> arcoiris2 = new TreeSet<>(new ComparatorOrdemAlfabetica());
+        arcoiris2.addAll(arcoiris);
+        for(String cor: arcoiris2){
+            System.out.println(cor);
+        }
 
         //Exiba as cores em ordem alfabética
 
 
+
+
+    }
+
+    static class ComparatorOrdemAlfabetica implements Comparator<String> {
+
+        @Override
+        public int compare(String o1, String o2) {
+            return o1.compareToIgnoreCase(o2);
+        }
     }
 
 }
