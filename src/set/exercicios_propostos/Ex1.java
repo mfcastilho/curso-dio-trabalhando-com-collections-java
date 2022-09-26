@@ -33,6 +33,16 @@ public class Ex1 {
             System.out.println(cor);
         }
 
+        //Exiba todas as cores que começam com "v"
+        System.out.println("\nExibindo todas as cores que começam com a letra 'v'");
+        for(String cor: arcoiris){
+            if(cor.startsWith("v".toUpperCase(Locale.ROOT))){
+                System.out.println(cor);
+            }
+        }
+
+
+
 
 
 
